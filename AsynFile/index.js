@@ -1,4 +1,7 @@
 const fs = require("fs")
+// The basic functionality of require is that it reads a JavaScript file, executes the file, and then proceeds to return the exports object.
+
+
 
 // this is asyn way to create file and put data on the file
 
