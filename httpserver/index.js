@@ -15,16 +15,21 @@
 // module
 const http = require('http');
 
+const fs = require('fs');
+
 // createServer
 const server = http.createServer((req, res) => {
+   const data = fs.readFile(`${__dirname}/UserApi/userapi.json`, "utf-8")
+    const objData = JSON.parse(data)
     // console.log(req.url)
 
 
       if(req.url =="/") {
           res.end("my home page")
       }
-    else if (req.url =="/about") {
-        res.end("my about page")
+    else if (req.url =="/userapi") {
+        res.writeHead(200, {"content-type" : "application/json"})
+        res.end(objData[1].name)
     }
     else if (req.url =="/contact") {
         res.end("my contatc page")
@@ -33,6 +38,7 @@ const server = http.createServer((req, res) => {
         res.write()  // also work
         res.end("my skills page")
     }
+     
     else {
         // unknown url add status code 
      res.writeHead(404 , {"Content-type" : "text/html"})
