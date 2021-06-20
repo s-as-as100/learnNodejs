@@ -16,7 +16,7 @@ const name = "mohd";
 
 
 
-// module.exports = add;   //  for single
+// module.exports = add;    //  for single
 
 // module.exports.add = add;  
 // module.exports.sub = sub;  

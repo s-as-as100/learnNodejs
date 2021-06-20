@@ -7,7 +7,7 @@ console.log(x)
 
 //  inside file we have created var and func is called private scope
 
-
+ 
 // (function() {
 
 // })  // grouping operatore

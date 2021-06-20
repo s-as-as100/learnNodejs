@@ -16,4 +16,6 @@ const path = require('path');
 
 // dir, root, base, name,ext
 
-console.log(path.parse('user@user-X556UQK:~/nodejs/pathModule'))
+// console.log(path.parse('user@user-X556UQK:~/nodejs/pathModule'))
+
+
