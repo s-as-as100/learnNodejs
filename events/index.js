@@ -60,11 +60,11 @@ const event = new EventEmiiter();
 
 event.on("checkpage", (sc,msg) => {
 console.log(`status code is ${sc}  and thr page is${msg}`)
-})
+})   // function define
 
 
 
-event.emit("checkpage", 200 ,"okay")
+event.emit("checkpage", 200 ,"okay")   // function call
 
 
 
